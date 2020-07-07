@@ -11,12 +11,12 @@ def assembled_aoh
 end
 
 def literal_aoh
-  [DON_G[:name][:occupation],JOELLE_VD[:name][:occupation],PAT_M[:name][:occupation],KATE_G[:name][:occupation],BRUCE_G[:name][:occupation]]
   # Using Array literal syntax only, build a nested array that uses the data in
   # held in the constants
 end
 
 def aoh_lookup(aoh, row, key)
+  aoh[row][key]
 end
 
 def aoh_update(aoh, row, key, new_value)
